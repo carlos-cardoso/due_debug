@@ -22,12 +22,15 @@ $ arm-none-eabi-objcopy -I ihex --output-target=binary CMSIS-DAP-V1-F103.hex fir
 1. Install stlink: [https://github.com/texane/stlink](https://github.com/texane/stlink)
 2. $ make release
 3. (for  system wide install)
+
    $ cd build/Release; sudo make install 
 4. upload using stlink or platformio
+
    $ cd stm32
+
    $ sh upload.sh
    
-### Upload Blink with debug symbols (-g) to due
+### Upload Blink with debug symbols (-g) to due using platformio
 $ cd ..
 
 $ cd due
@@ -53,7 +56,9 @@ $ openocd -c "interface cmsis-dap" -f due.cfg
 
 ## Using gdb interface
 $ arm-none-eabi-gdb example.elf
+
 (gdb) target remote localhost:3333
+
 Remote debugging using localhost:3333
 
 ## Using Clion interface
