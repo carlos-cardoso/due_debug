@@ -80,7 +80,8 @@ $ arm-none-eabi-gdb example.elf
 Remote debugging using localhost:3333
 
 ## Using Clion gdb interface
-<img src="https://github.com/carlos-cardoso/due_debug/blob/master/clion.jpg" width="300" height="250">
+
+<img src="https://github.com/carlos-cardoso/due_debug/blob/master/clion.png" width="300" height="250">
 
 
 
