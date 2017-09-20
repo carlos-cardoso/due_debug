@@ -29,7 +29,9 @@ $ arm-none-eabi-objcopy -I ihex --output-target=binary CMSIS-DAP-V1-F103.hex fir
    
 ### Upload Blink with debug symbols (-g) to due
 $ cd ..
+
 $ cd due
+
 $ sh upload.sh
 
 Use edbg to test programming and verifying the firmware:
