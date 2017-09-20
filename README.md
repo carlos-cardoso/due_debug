@@ -7,9 +7,9 @@
 
 # Due Debug
 My notes on debugging a arduino Due with a cheap stm32 in ubuntu 16.04, for future reference, and to help whoever needs to do the same.
-
-<img src="https://github.com/carlos-cardoso/due_debug/blob/master/debug.jpg" width="300" height="250">
-
+<p align="center">
+<img align="center" src="https://github.com/carlos-cardoso/due_debug/blob/master/debug.jpg" width="300" height="250">
+</p>
 
 ## Material:
 1. Arduino Due.
@@ -34,8 +34,9 @@ $ arm-none-eabi-objcopy -I ihex --output-target=binary CMSIS-DAP-V1-F103.hex fir
 3. (for  system wide install)
 
    $ cd build/Release; sudo make install 
-
+<p align="center">
 <img src="https://github.com/carlos-cardoso/due_debug/blob/master/stlink.jpg" width="300" height="250">
+</p>
    
 4. upload using stlink or platformio
 
@@ -58,8 +59,10 @@ $ sh upload.sh
 $ make all
 
 ### connect wires:
+<p align="center">
 <img src="https://github.com/carlos-cardoso/due_debug/blob/master/stm32.jpg" width="300" height="250">
 <img src="https://github.com/carlos-cardoso/due_debug/blob/master/swd.jpg" width="300" height="250">
+</p>
 
 ### Program:
 $ ./edbg -p -t atmel_cm3 -f myduefirmware.bin 
@@ -80,8 +83,9 @@ $ arm-none-eabi-gdb example.elf
 Remote debugging using localhost:3333
 
 ## Using Clion gdb interface
-
+<p align="center">
 <img src="https://github.com/carlos-cardoso/due_debug/blob/master/clion.png" width="300" height="250">
+</p>
 
 
 
