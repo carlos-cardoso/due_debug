@@ -25,7 +25,8 @@ Get Mitek's wonderfull stm32 CMSIS-DAP firmware:
 
 Download the .hex file in "CMSIS-DAP/Firmware/STM32/hex/CMSIS-DAP-V1-F103.hex"
 
-### Convert to a bin file using:
+
+### To Convert to a bin file using:
 $ arm-none-eabi-objcopy -I ihex --output-target=binary CMSIS-DAP-V1-F103.hex firmware.bin
 
 ### Upload to smt32 
@@ -40,9 +41,7 @@ $ arm-none-eabi-objcopy -I ihex --output-target=binary CMSIS-DAP-V1-F103.hex fir
    
 4. upload using stlink or platformio
 
-   $ cd stm32
-
-   $ sh upload.sh
+   $ st-flash --format ihex write CMSIS-DAP-V1-F103.hex 
    
 ### Upload Blink with debug symbols (-g) to due using platformio
 $ cd ..
